@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/imagens_projeto-01-09/branco.png"/>
+    <title>One Life</title>
+    <link rel="stylesheet" href="pagina1.css">
+    <style>
+
+        </style>
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="jquery.velocity.min.js"></script>
+        <script type="text/javascript" src="jquery.touchSwipe.min.js"></script>
+        
+        <script src="bgcarousel.js" type="text/javascript">
+        </script>
+        
+        <script type="text/javascript">
+        
+        var firstbgcarousel=new bgCarousel({
+            wrapperid: 'mybgcarousel', //ID of blank DIV on page to house carousel
+            imagearray: [
+                ['imagens_projeto-01-09/img1.jpg', '<h2>Você só tem uma vida</h2>Apriveite ela.'], //["image_path", "optional description"]
+                ['imagens_projeto-01-09/img2.jpg', '<h2>Pule conosco</h2>Vivencie esta experiência única junto a nós.'],
+                ['imagens_projeto-01-09/img4.jpg', 'Pulos com paisagens icônicas de nosso país.'],
+                ['imagens_projeto-01-09/img3.jpg', 'Crie memórias inesquecíveis'] //<--no trailing comma after very last image element!
+            ],
+            displaymode: {type:'auto', pause:3000, cycles:2, stoponclick:false, pauseonmouseover:true},
+            navbuttons: ['imagens_projeto-01-09/left.gif', 'imagens_projeto-01-09/right.gif', 'imagens_projeto-01-09/up.gif', '../projeto01.09/imagens_projeto-01-09/down.gif'], // path to nav images
+            activeslideclass: 'selectedslide', // CSS class that gets added to currently shown DIV slide
+            orientation: 'h', //Valid values: "h" or "v"
+            persist: true, //remember last viewed slide and recall within same session?
+            slideduration: 500 //transition duration (milliseconds)
+        })
+        
+        </script>
+</head>
+<body>
+    <main>
+            <nav id="menu">
+                <a href="#quemsomos">Quem Somos</a>
+                <a href="#duplo">Salto Duplo</a>
+                <img src="imagens_projeto-01-09/branco.png" alt="">
+                <a href="#cursos">Cursos</a>
+                <a href="#treinamento">Treino</a>
+
+            </nav>
+           
+           <!-- <nav id="imagemdecima">
+                <h1>VOCÊ SÓ TEM UMA VIDA</h1>
+                <h4>APROVEITE ELA.</h4>
+                <img src="../projeto01.09/imagens_projeto-01-09/pexels-serinus-5149469 1.png">
+            </nav>-->
+
+            <div id="mybgcarousel" class="bgcarousel"></div>
+
+            <nav id="meio">
+                <h1>QUEM SOMOS?</h1> <a name="quemsomos"></a>
+                <p>Somos uma empresa especializada em paraquedismo com o simples objetivo de tornar esse esporte em algo acessivel para todos os jovens e adultos brasileiros, após certas pesquisas de campo, descobrimos que a maioria dos brasileiros nunca pulou de paraquedas, e nós da Onelife queremos proporcionar essa sensação unica para nosso povo.</p>
+                <img src="imagens_projeto-01-09/picwish 1.png">
+            </nav>
+            
+            <section id="salto_duplo"> <a name="duplo">
+                <h3 class="sombra">Realize o nosso salto duplo</h3>
+                <p class="sombrap">A experiência ideal para novatos do esporte, realize o seu salto junto de nossos profissionais capacitados e se preocupe somente com sua diversão durante o salto</p>
+                <button>
+                    <a href="#preco_salto">Saiba Mais</a>
+                </button>
+            </section>
+
+            <section id="curso_sky"> <a name="cursos"></a>
+                <h3 class="sombra">Curso de Skydiving</h3>
+                <p class="sombrap">Venha aprender conosco como se tornar um atleta de skydiving e poder realizar seus próprios saltos</p>
+                <button>
+                   <a href="#curso">Saiba Mais</a>
+                </button>
+            </section>
+            <!--PARTE DO TREINAMENTO-->
+            <section id="wind_tunnel"> <a name="treinamento"></a>
+                <h3 class="sombra">Treinamento com wind tunnel</h3>
+                <p class="sombrap">Experimente nosso tunel de vento, para praticar o seu salto e movimentos ao ar</p>
+                <button>Saiba Mais</button>
+            </section>
+
+            <div class="duvidas"> <a name="duvidas"></a>
+                <h1>DÚVIDAS ?</h1> 
+                <h5>ENTRE EM CONTATO CONOSCO!</h5>                   
+                <input type="text" name="nome" maxlength="30" size="50" placeholder="NOME:">                   
+                <br> <br>                           
+                <input type="email" name="mail" maxlength="30" size="30" placeholder="EMAIL:">
+                <br> <br>
+                <textarea cols="40" rows="10" placeholder="CONTE PARA NÓS:"></textarea>
+                <br><br>
+                <button>Enviar</button> 
+            </div>
+            <footer id="rodape">
+                <div class="contato">
+                    <div id="contatoo">
+                    <h1>Contato</h1>
+                    <p>onelife@gocode.com</p>
+                    <p>55 11 90876523</p>
+                </div>
+
+                <div id="redessociais">
+                    <h3>Redes Sociais</h3>
+                    <div id="logosredes">
+                    <img  src="imagens_projeto-01-09/whats.png">
+                    <img  src="imagens_projeto-01-09/insta.png">
+                    <img  src="imagens_projeto-01-09/face.png">
+                    </div>
+                </div>
+            </footer>
+    </main>
+    
+</body>
+</html>
